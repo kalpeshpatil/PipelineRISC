@@ -1,0 +1,19 @@
+transcript on
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+vlog -vlog01compat -work work +incdir+D:/lectures/sem5/ee309/PipelineProject/Pipeline {D:/lectures/sem5/ee309/PipelineProject/Pipeline/RegFiles.v}
+vlog -vlog01compat -work work +incdir+D:/lectures/sem5/ee309/PipelineProject/Pipeline {D:/lectures/sem5/ee309/PipelineProject/Pipeline/mux8to1_16b.v}
+vlog -vlog01compat -work work +incdir+D:/lectures/sem5/ee309/PipelineProject/Pipeline {D:/lectures/sem5/ee309/PipelineProject/Pipeline/mux4to1_16b.v}
+vlog -vlog01compat -work work +incdir+D:/lectures/sem5/ee309/PipelineProject/Pipeline {D:/lectures/sem5/ee309/PipelineProject/Pipeline/se97_16.v}
+vlog -vlog01compat -work work +incdir+D:/lectures/sem5/ee309/PipelineProject/Pipeline {D:/lectures/sem5/ee309/PipelineProject/Pipeline/se79_16.v}
+vlog -vlog01compat -work work +incdir+D:/lectures/sem5/ee309/PipelineProject/Pipeline {D:/lectures/sem5/ee309/PipelineProject/Pipeline/mux2to1.v}
+vlog -vlog01compat -work work +incdir+D:/lectures/sem5/ee309/PipelineProject/Pipeline {D:/lectures/sem5/ee309/PipelineProject/Pipeline/Inst_memory.v}
+vlog -vlog01compat -work work +incdir+D:/lectures/sem5/ee309/PipelineProject/Pipeline {D:/lectures/sem5/ee309/PipelineProject/Pipeline/Data_memory.v}
+vlog -vlog01compat -work work +incdir+D:/lectures/sem5/ee309/PipelineProject/Pipeline {D:/lectures/sem5/ee309/PipelineProject/Pipeline/controller.v}
+vlog -vlog01compat -work work +incdir+D:/lectures/sem5/ee309/PipelineProject/Pipeline {D:/lectures/sem5/ee309/PipelineProject/Pipeline/mux2to1_3b.v}
+vlog -vlog01compat -work work +incdir+D:/lectures/sem5/ee309/PipelineProject/Pipeline {D:/lectures/sem5/ee309/PipelineProject/Pipeline/ALU1.v}
+

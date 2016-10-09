@@ -1,0 +1,539 @@
+Analysis & Synthesis report for pipeline_project
+Mon Nov 30 12:52:40 2015
+Quartus II 32-bit Version 11.1 Build 173 11/01/2011 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. General Register Statistics
+  9. Parameter Settings for User Entity Instance: ALU1:alu1
+ 10. Port Connectivity Checks: "mux4to1_16b:forwardMuxB"
+ 11. Port Connectivity Checks: "mux4to1_16b:forwardMuxA"
+ 12. Port Connectivity Checks: "mux8to1_16b:aluSrcBMux"
+ 13. Port Connectivity Checks: "mux2to1_16b:aluSrcAMux"
+ 14. Port Connectivity Checks: "RegisterFile:regFile"
+ 15. Port Connectivity Checks: "mux2to1_3b:a1_mux"
+ 16. Port Connectivity Checks: "mux8to1_16b:PC_mux"
+ 17. Elapsed Time Per Partition
+ 18. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2011 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++-------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                  ;
++------------------------------------+------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Mon Nov 30 12:52:40 2015    ;
+; Quartus II 32-bit Version          ; 11.1 Build 173 11/01/2011 SJ Web Edition ;
+; Revision Name                      ; pipeline_project                         ;
+; Top-level Entity Name              ; controller                               ;
+; Family                             ; Cyclone IV E                             ;
+; Total logic elements               ; 0                                        ;
+;     Total combinational functions  ; 0                                        ;
+;     Dedicated logic registers      ; 0                                        ;
+; Total registers                    ; 0                                        ;
+; Total pins                         ; 1                                        ;
+; Total virtual pins                 ; 0                                        ;
+; Total memory bits                  ; 0                                        ;
+; Embedded Multiplier 9-bit elements ; 0                                        ;
+; Total PLLs                         ; 0                                        ;
++------------------------------------+------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                        ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                     ; Setting            ; Default Value      ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                     ; EP4CE6F17C6        ;                    ;
+; Top-level entity name                                                      ; controller         ; pipeline_project   ;
+; Family name                                                                ; Cyclone IV E       ; Cyclone IV GX      ;
+; Use smart compilation                                                      ; Off                ; Off                ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                                ; Off                ; Off                ;
+; Restructure Multiplexers                                                   ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                                        ; Off                ; Off                ;
+; Preserve fewer node names                                                  ; On                 ; On                 ;
+; Disable OpenCore Plus hardware evaluation                                  ; Off                ; Off                ;
+; Verilog Version                                                            ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                               ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                   ; Auto               ; Auto               ;
+; Safe State Machine                                                         ; Off                ; Off                ;
+; Extract Verilog State Machines                                             ; On                 ; On                 ;
+; Extract VHDL State Machines                                                ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                          ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                 ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                             ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                    ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                  ; On                 ; On                 ;
+; Parallel Synthesis                                                         ; On                 ; On                 ;
+; DSP Block Balancing                                                        ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                         ; On                 ; On                 ;
+; Power-Up Don't Care                                                        ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                               ; Off                ; Off                ;
+; Remove Duplicate Registers                                                 ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                       ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                     ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                      ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                  ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                       ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                        ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                             ; Off                ; Off                ;
+; Optimization Technique                                                     ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                         ; 70                 ; 70                 ;
+; Auto Carry Chains                                                          ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                       ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                      ; Off                ; Off                ;
+; Auto ROM Replacement                                                       ; On                 ; On                 ;
+; Auto RAM Replacement                                                       ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                 ; On                 ; On                 ;
+; Auto Shift Register Replacement                                            ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                            ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                              ; On                 ; On                 ;
+; Strict RAM Replacement                                                     ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                          ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                     ; Off                ; Off                ;
+; Auto RAM Block Balancing                                                   ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                      ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                              ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                        ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                          ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                    ; On                 ; On                 ;
+; Report Parameter Settings                                                  ; On                 ; On                 ;
+; Report Source Assignments                                                  ; On                 ; On                 ;
+; Report Connectivity Checks                                                 ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                         ; Off                ; Off                ;
+; Synchronization Register Chain Length                                      ; 3                  ; 3                  ;
+; PowerPlay Power Optimization                                               ; Normal compilation ; Normal compilation ;
+; HDL message level                                                          ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                            ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                   ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                  ; 100                ; 100                ;
+; Clock MUX Protection                                                       ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                ; Off                ; Off                ;
+; Block Design Naming                                                        ; Auto               ; Auto               ;
+; SDC constraint protection                                                  ; Off                ; Off                ;
+; Synthesis Effort                                                           ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On                 ; On                 ;
+; Analysis & Synthesis Message Level                                         ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                     ; On                 ; On                 ;
+; Synthesis Seed                                                             ; 1                  ; 1                  ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 2      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                        ;
++----------------------------------+-----------------+------------------------+-------------------------------------------------------------------------------------------------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                                                    ;
++----------------------------------+-----------------+------------------------+-------------------------------------------------------------------------------------------------+
+; RegFiles.v                       ; yes             ; User Verilog HDL File  ; D:/lectures/sem5/ee309/130020118_130020090_130040019_13D070018_pipeline/code/RegFiles.v         ;
+; mux8to1_16b.v                    ; yes             ; User Verilog HDL File  ; D:/lectures/sem5/ee309/130020118_130020090_130040019_13D070018_pipeline/code/mux8to1_16b.v      ;
+; mux4to1_16b.v                    ; yes             ; User Verilog HDL File  ; D:/lectures/sem5/ee309/130020118_130020090_130040019_13D070018_pipeline/code/mux4to1_16b.v      ;
+; se97_16.v                        ; yes             ; User Verilog HDL File  ; D:/lectures/sem5/ee309/130020118_130020090_130040019_13D070018_pipeline/code/se97_16.v          ;
+; se79_16.v                        ; yes             ; User Verilog HDL File  ; D:/lectures/sem5/ee309/130020118_130020090_130040019_13D070018_pipeline/code/se79_16.v          ;
+; mux2to1.v                        ; yes             ; User Verilog HDL File  ; D:/lectures/sem5/ee309/130020118_130020090_130040019_13D070018_pipeline/code/mux2to1.v          ;
+; Inst_memory.v                    ; yes             ; User Verilog HDL File  ; D:/lectures/sem5/ee309/130020118_130020090_130040019_13D070018_pipeline/code/Inst_memory.v      ;
+; Data_memory.v                    ; yes             ; User Verilog HDL File  ; D:/lectures/sem5/ee309/130020118_130020090_130040019_13D070018_pipeline/code/Data_memory.v      ;
+; priority_encoder.v               ; yes             ; User Verilog HDL File  ; D:/lectures/sem5/ee309/130020118_130020090_130040019_13D070018_pipeline/code/priority_encoder.v ;
+; controller.v                     ; yes             ; User Verilog HDL File  ; D:/lectures/sem5/ee309/130020118_130020090_130040019_13D070018_pipeline/code/controller.v       ;
+; mux2to1_3b.v                     ; yes             ; User Verilog HDL File  ; D:/lectures/sem5/ee309/130020118_130020090_130040019_13D070018_pipeline/code/mux2to1_3b.v       ;
+; ALU1.v                           ; yes             ; User Verilog HDL File  ; D:/lectures/sem5/ee309/130020118_130020090_130040019_13D070018_pipeline/code/ALU1.v             ;
+; forwarding_unit.v                ; yes             ; User Verilog HDL File  ; D:/lectures/sem5/ee309/130020118_130020090_130040019_13D070018_pipeline/code/forwarding_unit.v  ;
+; hazard_unit.v                    ; yes             ; User Verilog HDL File  ; D:/lectures/sem5/ee309/130020118_130020090_130040019_13D070018_pipeline/code/hazard_unit.v      ;
+; mux2to1_9b.v                     ; yes             ; User Verilog HDL File  ; D:/lectures/sem5/ee309/130020118_130020090_130040019_13D070018_pipeline/code/mux2to1_9b.v       ;
++----------------------------------+-----------------+------------------------+-------------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary         ;
++---------------------------------------------+-------+
+; Resource                                    ; Usage ;
++---------------------------------------------+-------+
+;                                             ;       ;
+; Total combinational functions               ; 0     ;
+; Logic element usage by number of LUT inputs ;       ;
+;     -- 4 input functions                    ; 0     ;
+;     -- 3 input functions                    ; 0     ;
+;     -- <=2 input functions                  ; 0     ;
+;                                             ;       ;
+; Logic elements by mode                      ;       ;
+;     -- normal mode                          ; 0     ;
+;     -- arithmetic mode                      ; 0     ;
+;                                             ;       ;
+; Total registers                             ; 0     ;
+;     -- Dedicated logic registers            ; 0     ;
+;     -- I/O registers                        ; 0     ;
+;                                             ;       ;
+; I/O pins                                    ; 1     ;
+; Maximum fan-out node                        ; clock ;
+; Maximum fan-out                             ; 1     ;
+; Total fan-out                               ; 1     ;
+; Average fan-out                             ; 0.50  ;
++---------------------------------------------+-------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                         ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
+; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Library Name ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
+; |controller                ; 0 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 1    ; 0            ; |controller         ;              ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 0     ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++--------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ALU1:alu1 ;
++----------------+-------+-------------------------------+
+; Parameter Name ; Value ; Type                          ;
++----------------+-------+-------------------------------+
+; nop            ; 00    ; Unsigned Binary               ;
+; add            ; 01    ; Unsigned Binary               ;
+; comp           ; 10    ; Unsigned Binary               ;
+; nan            ; 11    ; Unsigned Binary               ;
++----------------+-------+-------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------+
+; Port Connectivity Checks: "mux4to1_16b:forwardMuxB" ;
++------+-------+----------+---------------------------+
+; Port ; Type  ; Severity ; Details                   ;
++------+-------+----------+---------------------------+
+; ip3  ; Input ; Info     ; Stuck at GND              ;
++------+-------+----------+---------------------------+
+
+
++-----------------------------------------------------+
+; Port Connectivity Checks: "mux4to1_16b:forwardMuxA" ;
++------+-------+----------+---------------------------+
+; Port ; Type  ; Severity ; Details                   ;
++------+-------+----------+---------------------------+
+; ip3  ; Input ; Info     ; Stuck at GND              ;
++------+-------+----------+---------------------------+
+
+
++----------------------------------------------------+
+; Port Connectivity Checks: "mux8to1_16b:aluSrcBMux" ;
++------------+-------+----------+--------------------+
+; Port       ; Type  ; Severity ; Details            ;
++------------+-------+----------+--------------------+
+; ip0[15..1] ; Input ; Info     ; Stuck at GND       ;
+; ip0[0]     ; Input ; Info     ; Stuck at VCC       ;
+; ip4        ; Input ; Info     ; Stuck at GND       ;
+; ip5        ; Input ; Info     ; Stuck at GND       ;
+; ip6        ; Input ; Info     ; Stuck at GND       ;
+; ip7        ; Input ; Info     ; Stuck at GND       ;
++------------+-------+----------+--------------------+
+
+
++----------------------------------------------------+
+; Port Connectivity Checks: "mux2to1_16b:aluSrcAMux" ;
++------+-------+----------+--------------------------+
+; Port ; Type  ; Severity ; Details                  ;
++------+-------+----------+--------------------------+
+; ip0  ; Input ; Info     ; Stuck at GND             ;
++------+-------+----------+--------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "RegisterFile:regFile"                                                               ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; R0   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; R1   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; R2   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; R3   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; R4   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; R5   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; R6   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; R7   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------+
+; Port Connectivity Checks: "mux2to1_3b:a1_mux" ;
++------+-------+----------+---------------------+
+; Port ; Type  ; Severity ; Details             ;
++------+-------+----------+---------------------+
+; ip0  ; Input ; Info     ; Stuck at VCC        ;
++------+-------+----------+---------------------+
+
+
++------------------------------------------------+
+; Port Connectivity Checks: "mux8to1_16b:PC_mux" ;
++------+-------+----------+----------------------+
+; Port ; Type  ; Severity ; Details              ;
++------+-------+----------+----------------------+
+; ip5  ; Input ; Info     ; Stuck at GND         ;
+; ip6  ; Input ; Info     ; Stuck at GND         ;
+; ip7  ; Input ; Info     ; Stuck at GND         ;
++------+-------+----------+----------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 32-bit Analysis & Synthesis
+    Info: Version 11.1 Build 173 11/01/2011 SJ Web Edition
+    Info: Processing started: Mon Nov 30 12:52:34 2015
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off pipeline_project -c pipeline_project
+Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (12021): Found 1 design units, including 1 entities, in source file regfiles.v
+    Info (12023): Found entity 1: RegisterFile
+Info (12021): Found 1 design units, including 1 entities, in source file mux8to1_16b.v
+    Info (12023): Found entity 1: mux8to1_16b
+Info (12021): Found 1 design units, including 1 entities, in source file mux8to1_3b.v
+    Info (12023): Found entity 1: mux8to1_3b
+Info (12021): Found 1 design units, including 1 entities, in source file mux4to1_16b.v
+    Info (12023): Found entity 1: mux4to1_16b
+Info (12021): Found 1 design units, including 1 entities, in source file se97_16.v
+    Info (12023): Found entity 1: se97_16
+Info (12021): Found 1 design units, including 1 entities, in source file se79_16.v
+    Info (12023): Found entity 1: se79_16
+Info (12021): Found 1 design units, including 1 entities, in source file mux4to1_3b.v
+    Info (12023): Found entity 1: mux2to1_3b__useless
+Info (12021): Found 1 design units, including 1 entities, in source file mux2to1.v
+    Info (12023): Found entity 1: mux2to1_16b
+Info (12021): Found 1 design units, including 1 entities, in source file inst_memory.v
+    Info (12023): Found entity 1: Inst_Memory
+Info (12021): Found 1 design units, including 1 entities, in source file data_memory.v
+    Info (12023): Found entity 1: Data_memory
+Info (12021): Found 1 design units, including 1 entities, in source file priority_encoder.v
+    Info (12023): Found entity 1: priority_encoder
+Info (12021): Found 1 design units, including 1 entities, in source file controller.v
+    Info (12023): Found entity 1: controller
+Info (12021): Found 1 design units, including 1 entities, in source file mux2to1_3b.v
+    Info (12023): Found entity 1: mux2to1_3b
+Info (12021): Found 1 design units, including 1 entities, in source file alu1.v
+    Info (12023): Found entity 1: ALU1
+Info (12021): Found 1 design units, including 1 entities, in source file forwarding_unit.v
+    Info (12023): Found entity 1: forwarding_unit
+Info (12021): Found 0 design units, including 0 entities, in source file pipeline_project.v
+Info (12021): Found 1 design units, including 1 entities, in source file hazard_unit.v
+    Info (12023): Found entity 1: hazard_unit
+Info (12021): Found 1 design units, including 1 entities, in source file mux2to1_9b.v
+    Info (12023): Found entity 1: mux2to1_9b
+Warning (10236): Verilog HDL Implicit Net warning at controller.v(105): created implicit net for "alu_pc_A_ctrl"
+Warning (10236): Verilog HDL Implicit Net warning at controller.v(106): created implicit net for "alu_pc_B_ctrl"
+Info (12127): Elaborating entity "controller" for the top level hierarchy
+Warning (10036): Verilog HDL or VHDL warning at controller.v(16): object "F_D" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at controller.v(34): object "D_R" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at controller.v(55): object "R_E" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at controller.v(69): object "E_M" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at controller.v(83): object "M_W" assigned a value but never read
+Warning (10230): Verilog HDL assignment warning at controller.v(110): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at controller.v(169): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at controller.v(174): truncated value with size 41 to match size of target (38)
+Warning (10230): Verilog HDL assignment warning at controller.v(230): truncated value with size 32 to match size of target (1)
+Warning (10855): Verilog HDL warning at controller.v(590): initial value for variable ALU_op_DR should be constant
+Warning (10855): Verilog HDL warning at controller.v(590): initial value for variable ALU_op_RE should be constant
+Info (12128): Elaborating entity "se79_16" for hierarchy "se79_16:signExtender79_16_PC_FD"
+Info (12128): Elaborating entity "mux2to1_16b" for hierarchy "mux2to1_16b:ALU_PC_MUXA"
+Info (12128): Elaborating entity "mux8to1_16b" for hierarchy "mux8to1_16b:PC_mux"
+Info (12128): Elaborating entity "Inst_Memory" for hierarchy "Inst_Memory:inst_memory0"
+Warning (10030): Net "Inst_memory.data_a" at Inst_memory.v(4) has no driver or initial value, using a default initial value '0'
+Warning (10030): Net "Inst_memory.waddr_a" at Inst_memory.v(4) has no driver or initial value, using a default initial value '0'
+Warning (10030): Net "Inst_memory.we_a" at Inst_memory.v(4) has no driver or initial value, using a default initial value '0'
+Info (12128): Elaborating entity "mux2to1_3b" for hierarchy "mux2to1_3b:a1_mux"
+Info (12128): Elaborating entity "RegisterFile" for hierarchy "RegisterFile:regFile"
+Warning (10240): Verilog HDL Always Construct warning at RegFiles.v(34): inferring latch(es) for variable "RF1", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at RegFiles.v(49): inferring latch(es) for variable "RF2", which holds its previous value in one or more paths through the always construct
+Info (10041): Inferred latch for "RF2[0]" at RegFiles.v(49)
+Info (10041): Inferred latch for "RF2[1]" at RegFiles.v(49)
+Info (10041): Inferred latch for "RF2[2]" at RegFiles.v(49)
+Info (10041): Inferred latch for "RF2[3]" at RegFiles.v(49)
+Info (10041): Inferred latch for "RF2[4]" at RegFiles.v(49)
+Info (10041): Inferred latch for "RF2[5]" at RegFiles.v(49)
+Info (10041): Inferred latch for "RF2[6]" at RegFiles.v(49)
+Info (10041): Inferred latch for "RF2[7]" at RegFiles.v(49)
+Info (10041): Inferred latch for "RF2[8]" at RegFiles.v(49)
+Info (10041): Inferred latch for "RF2[9]" at RegFiles.v(49)
+Info (10041): Inferred latch for "RF2[10]" at RegFiles.v(49)
+Info (10041): Inferred latch for "RF2[11]" at RegFiles.v(49)
+Info (10041): Inferred latch for "RF2[12]" at RegFiles.v(49)
+Info (10041): Inferred latch for "RF2[13]" at RegFiles.v(49)
+Info (10041): Inferred latch for "RF2[14]" at RegFiles.v(49)
+Info (10041): Inferred latch for "RF2[15]" at RegFiles.v(49)
+Info (10041): Inferred latch for "RF1[0]" at RegFiles.v(34)
+Info (10041): Inferred latch for "RF1[1]" at RegFiles.v(34)
+Info (10041): Inferred latch for "RF1[2]" at RegFiles.v(34)
+Info (10041): Inferred latch for "RF1[3]" at RegFiles.v(34)
+Info (10041): Inferred latch for "RF1[4]" at RegFiles.v(34)
+Info (10041): Inferred latch for "RF1[5]" at RegFiles.v(34)
+Info (10041): Inferred latch for "RF1[6]" at RegFiles.v(34)
+Info (10041): Inferred latch for "RF1[7]" at RegFiles.v(34)
+Info (10041): Inferred latch for "RF1[8]" at RegFiles.v(34)
+Info (10041): Inferred latch for "RF1[9]" at RegFiles.v(34)
+Info (10041): Inferred latch for "RF1[10]" at RegFiles.v(34)
+Info (10041): Inferred latch for "RF1[11]" at RegFiles.v(34)
+Info (10041): Inferred latch for "RF1[12]" at RegFiles.v(34)
+Info (10041): Inferred latch for "RF1[13]" at RegFiles.v(34)
+Info (10041): Inferred latch for "RF1[14]" at RegFiles.v(34)
+Info (10041): Inferred latch for "RF1[15]" at RegFiles.v(34)
+Info (12128): Elaborating entity "se97_16" for hierarchy "se97_16:signExtender97_16"
+Info (12128): Elaborating entity "mux4to1_16b" for hierarchy "mux4to1_16b:forwardMuxA"
+Info (12128): Elaborating entity "ALU1" for hierarchy "ALU1:alu1"
+Warning (10240): Verilog HDL Always Construct warning at ALU1.v(25): inferring latch(es) for variable "Out_ALU_ZFlag", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at ALU1.v(25): inferring latch(es) for variable "Out_ALU_CFlag", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at ALU1.v(25): inferring latch(es) for variable "Out_ALU_result", which holds its previous value in one or more paths through the always construct
+Info (10041): Inferred latch for "Out_ALU_result[0]" at ALU1.v(25)
+Info (10041): Inferred latch for "Out_ALU_result[1]" at ALU1.v(25)
+Info (10041): Inferred latch for "Out_ALU_result[2]" at ALU1.v(25)
+Info (10041): Inferred latch for "Out_ALU_result[3]" at ALU1.v(25)
+Info (10041): Inferred latch for "Out_ALU_result[4]" at ALU1.v(25)
+Info (10041): Inferred latch for "Out_ALU_result[5]" at ALU1.v(25)
+Info (10041): Inferred latch for "Out_ALU_result[6]" at ALU1.v(25)
+Info (10041): Inferred latch for "Out_ALU_result[7]" at ALU1.v(25)
+Info (10041): Inferred latch for "Out_ALU_result[8]" at ALU1.v(25)
+Info (10041): Inferred latch for "Out_ALU_result[9]" at ALU1.v(25)
+Info (10041): Inferred latch for "Out_ALU_result[10]" at ALU1.v(25)
+Info (10041): Inferred latch for "Out_ALU_result[11]" at ALU1.v(25)
+Info (10041): Inferred latch for "Out_ALU_result[12]" at ALU1.v(25)
+Info (10041): Inferred latch for "Out_ALU_result[13]" at ALU1.v(25)
+Info (10041): Inferred latch for "Out_ALU_result[14]" at ALU1.v(25)
+Info (10041): Inferred latch for "Out_ALU_result[15]" at ALU1.v(25)
+Info (10041): Inferred latch for "Out_ALU_ZFlag" at ALU1.v(63)
+Info (10041): Inferred latch for "Out_ALU_CFlag" at ALU1.v(63)
+Info (12128): Elaborating entity "Data_memory" for hierarchy "Data_memory:Data_memory0"
+Warning (10240): Verilog HDL Always Construct warning at Data_memory.v(10): inferring latch(es) for variable "edb_out", which holds its previous value in one or more paths through the always construct
+Warning (10855): Verilog HDL warning at Data_memory.v(26): initial value for variable Data_memory should be constant
+Info (10041): Inferred latch for "edb_out[0]" at Data_memory.v(10)
+Info (10041): Inferred latch for "edb_out[1]" at Data_memory.v(10)
+Info (10041): Inferred latch for "edb_out[2]" at Data_memory.v(10)
+Info (10041): Inferred latch for "edb_out[3]" at Data_memory.v(10)
+Info (10041): Inferred latch for "edb_out[4]" at Data_memory.v(10)
+Info (10041): Inferred latch for "edb_out[5]" at Data_memory.v(10)
+Info (10041): Inferred latch for "edb_out[6]" at Data_memory.v(10)
+Info (10041): Inferred latch for "edb_out[7]" at Data_memory.v(10)
+Info (10041): Inferred latch for "edb_out[8]" at Data_memory.v(10)
+Info (10041): Inferred latch for "edb_out[9]" at Data_memory.v(10)
+Info (10041): Inferred latch for "edb_out[10]" at Data_memory.v(10)
+Info (10041): Inferred latch for "edb_out[11]" at Data_memory.v(10)
+Info (10041): Inferred latch for "edb_out[12]" at Data_memory.v(10)
+Info (10041): Inferred latch for "edb_out[13]" at Data_memory.v(10)
+Info (10041): Inferred latch for "edb_out[14]" at Data_memory.v(10)
+Info (10041): Inferred latch for "edb_out[15]" at Data_memory.v(10)
+Info (12128): Elaborating entity "priority_encoder" for hierarchy "priority_encoder:prio_enc_LM"
+Warning (10230): Verilog HDL assignment warning at priority_encoder.v(22): truncated value with size 32 to match size of target (3)
+Info (12128): Elaborating entity "mux2to1_9b" for hierarchy "mux2to1_9b:imm9FDmux"
+Info (12128): Elaborating entity "forwarding_unit" for hierarchy "forwarding_unit:forwarding_unit_0"
+Warning (10240): Verilog HDL Always Construct warning at forwarding_unit.v(23): inferring latch(es) for variable "forward_muxB_ctrl", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at forwarding_unit.v(23): inferring latch(es) for variable "forward_muxA_ctrl", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at forwarding_unit.v(23): inferring latch(es) for variable "T2_dash_ctrl", which holds its previous value in one or more paths through the always construct
+Info (10041): Inferred latch for "forward_muxB_ctrl[0]" at forwarding_unit.v(98)
+Info (10041): Inferred latch for "forward_muxB_ctrl[1]" at forwarding_unit.v(98)
+Info (10041): Inferred latch for "forward_muxA_ctrl[0]" at forwarding_unit.v(97)
+Info (10041): Inferred latch for "forward_muxA_ctrl[1]" at forwarding_unit.v(97)
+Info (10041): Inferred latch for "T2_dash_ctrl" at forwarding_unit.v(59)
+Info (12128): Elaborating entity "hazard_unit" for hierarchy "hazard_unit:hazard_unit_0"
+Warning (10240): Verilog HDL Always Construct warning at hazard_unit.v(48): inferring latch(es) for variable "ALU_pc_muxB_ctrl", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at hazard_unit.v(48): inferring latch(es) for variable "FD_en", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at hazard_unit.v(48): inferring latch(es) for variable "DR_en", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at hazard_unit.v(48): inferring latch(es) for variable "RE_en", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at hazard_unit.v(48): inferring latch(es) for variable "EM_en", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at hazard_unit.v(48): inferring latch(es) for variable "MW_en", which holds its previous value in one or more paths through the always construct
+Info (10041): Inferred latch for "FD_en" at hazard_unit.v(193)
+Info (10041): Inferred latch for "MW_en" at hazard_unit.v(173)
+Info (10041): Inferred latch for "EM_en" at hazard_unit.v(173)
+Info (10041): Inferred latch for "RE_en" at hazard_unit.v(173)
+Info (10041): Inferred latch for "DR_en" at hazard_unit.v(173)
+Info (10041): Inferred latch for "ALU_pc_muxB_ctrl" at hazard_unit.v(60)
+Warning (12011): Net is missing source, defaulting to GND
+    Warning (12110): Net "reset" is missing source, defaulting to GND
+Warning (12011): Net is missing source, defaulting to GND
+    Warning (12110): Net "reset" is missing source, defaulting to GND
+Warning (12011): Net is missing source, defaulting to GND
+    Warning (12110): Net "reset" is missing source, defaulting to GND
+Warning (12011): Net is missing source, defaulting to GND
+    Warning (12110): Net "reset" is missing source, defaulting to GND
+Warning (12011): Net is missing source, defaulting to GND
+    Warning (12110): Net "reset" is missing source, defaulting to GND
+Warning (12011): Net is missing source, defaulting to GND
+    Warning (12110): Net "reset" is missing source, defaulting to GND
+Warning (12011): Net is missing source, defaulting to GND
+    Warning (12110): Net "reset" is missing source, defaulting to GND
+Warning (12011): Net is missing source, defaulting to GND
+    Warning (12110): Net "reset" is missing source, defaulting to GND
+Warning (12011): Net is missing source, defaulting to GND
+    Warning (12110): Net "reset" is missing source, defaulting to GND
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+Warning (21074): Design contains 1 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "clock"
+Info (21057): Implemented 1 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 1 input pins
+    Info (21059): Implemented 0 output pins
+Info: Quartus II 32-bit Analysis & Synthesis was successful. 0 errors, 54 warnings
+    Info: Peak virtual memory: 306 megabytes
+    Info: Processing ended: Mon Nov 30 12:52:40 2015
+    Info: Elapsed time: 00:00:06
+    Info: Total CPU time (on all processors): 00:00:05
+
+

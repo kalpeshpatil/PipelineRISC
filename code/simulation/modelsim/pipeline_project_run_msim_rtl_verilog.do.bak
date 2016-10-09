@@ -1,0 +1,9 @@
+transcript on
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+vlog -vlog01compat -work work +incdir+D:/lectures/sem5/ee309/PipelineProject/Pipeline {D:/lectures/sem5/ee309/PipelineProject/Pipeline/priority_encoder.v}
+

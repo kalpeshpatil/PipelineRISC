@@ -1,0 +1,267 @@
+# Reading D:/Programmes/Programmes/altera/11.1/modelsim_ase/tcl/vsim/pref.tcl 
+# do pipeline_project_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Modifying D:\Programmes\Programmes\altera\11.1\modelsim_ase\win32aloem/modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+D:/lectures/sem5/ee309/130020118_130020090_130040019_13D070018_pipeline/code {D:/lectures/sem5/ee309/130020118_130020090_130040019_13D070018_pipeline/code/RegFiles.v}
+# Model Technology ModelSim ALTERA vlog 10.0c Compiler 2011.09 Sep 21 2011
+# -- Compiling module RegisterFile
+# 
+# Top level modules:
+# 	RegisterFile
+# vlog -vlog01compat -work work +incdir+D:/lectures/sem5/ee309/130020118_130020090_130040019_13D070018_pipeline/code {D:/lectures/sem5/ee309/130020118_130020090_130040019_13D070018_pipeline/code/mux8to1_16b.v}
+# Model Technology ModelSim ALTERA vlog 10.0c Compiler 2011.09 Sep 21 2011
+# -- Compiling module mux8to1_16b
+# 
+# Top level modules:
+# 	mux8to1_16b
+# vlog -vlog01compat -work work +incdir+D:/lectures/sem5/ee309/130020118_130020090_130040019_13D070018_pipeline/code {D:/lectures/sem5/ee309/130020118_130020090_130040019_13D070018_pipeline/code/mux4to1_16b.v}
+# Model Technology ModelSim ALTERA vlog 10.0c Compiler 2011.09 Sep 21 2011
+# -- Compiling module mux4to1_16b
+# 
+# Top level modules:
+# 	mux4to1_16b
+# vlog -vlog01compat -work work +incdir+D:/lectures/sem5/ee309/130020118_130020090_130040019_13D070018_pipeline/code {D:/lectures/sem5/ee309/130020118_130020090_130040019_13D070018_pipeline/code/se97_16.v}
+# Model Technology ModelSim ALTERA vlog 10.0c Compiler 2011.09 Sep 21 2011
+# -- Compiling module se97_16
+# 
+# Top level modules:
+# 	se97_16
+# vlog -vlog01compat -work work +incdir+D:/lectures/sem5/ee309/130020118_130020090_130040019_13D070018_pipeline/code {D:/lectures/sem5/ee309/130020118_130020090_130040019_13D070018_pipeline/code/se79_16.v}
+# Model Technology ModelSim ALTERA vlog 10.0c Compiler 2011.09 Sep 21 2011
+# -- Compiling module se79_16
+# 
+# Top level modules:
+# 	se79_16
+# vlog -vlog01compat -work work +incdir+D:/lectures/sem5/ee309/130020118_130020090_130040019_13D070018_pipeline/code {D:/lectures/sem5/ee309/130020118_130020090_130040019_13D070018_pipeline/code/mux2to1.v}
+# Model Technology ModelSim ALTERA vlog 10.0c Compiler 2011.09 Sep 21 2011
+# -- Compiling module mux2to1_16b
+# 
+# Top level modules:
+# 	mux2to1_16b
+# vlog -vlog01compat -work work +incdir+D:/lectures/sem5/ee309/130020118_130020090_130040019_13D070018_pipeline/code {D:/lectures/sem5/ee309/130020118_130020090_130040019_13D070018_pipeline/code/Inst_memory.v}
+# Model Technology ModelSim ALTERA vlog 10.0c Compiler 2011.09 Sep 21 2011
+# -- Compiling module Inst_Memory
+# 
+# Top level modules:
+# 	Inst_Memory
+# vlog -vlog01compat -work work +incdir+D:/lectures/sem5/ee309/130020118_130020090_130040019_13D070018_pipeline/code {D:/lectures/sem5/ee309/130020118_130020090_130040019_13D070018_pipeline/code/Data_memory.v}
+# Model Technology ModelSim ALTERA vlog 10.0c Compiler 2011.09 Sep 21 2011
+# -- Compiling module Data_memory
+# 
+# Top level modules:
+# 	Data_memory
+# vlog -vlog01compat -work work +incdir+D:/lectures/sem5/ee309/130020118_130020090_130040019_13D070018_pipeline/code {D:/lectures/sem5/ee309/130020118_130020090_130040019_13D070018_pipeline/code/priority_encoder.v}
+# Model Technology ModelSim ALTERA vlog 10.0c Compiler 2011.09 Sep 21 2011
+# -- Compiling module priority_encoder
+# 
+# Top level modules:
+# 	priority_encoder
+# vlog -vlog01compat -work work +incdir+D:/lectures/sem5/ee309/130020118_130020090_130040019_13D070018_pipeline/code {D:/lectures/sem5/ee309/130020118_130020090_130040019_13D070018_pipeline/code/controller.v}
+# Model Technology ModelSim ALTERA vlog 10.0c Compiler 2011.09 Sep 21 2011
+# -- Compiling module controller
+# ** Warning: D:/lectures/sem5/ee309/130020118_130020090_130040019_13D070018_pipeline/code/controller.v(273): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# Top level modules:
+# 	controller
+# vlog -vlog01compat -work work +incdir+D:/lectures/sem5/ee309/130020118_130020090_130040019_13D070018_pipeline/code {D:/lectures/sem5/ee309/130020118_130020090_130040019_13D070018_pipeline/code/mux2to1_3b.v}
+# Model Technology ModelSim ALTERA vlog 10.0c Compiler 2011.09 Sep 21 2011
+# -- Compiling module mux2to1_3b
+# 
+# Top level modules:
+# 	mux2to1_3b
+# vlog -vlog01compat -work work +incdir+D:/lectures/sem5/ee309/130020118_130020090_130040019_13D070018_pipeline/code {D:/lectures/sem5/ee309/130020118_130020090_130040019_13D070018_pipeline/code/ALU1.v}
+# Model Technology ModelSim ALTERA vlog 10.0c Compiler 2011.09 Sep 21 2011
+# -- Compiling module ALU1
+# 
+# Top level modules:
+# 	ALU1
+# vlog -vlog01compat -work work +incdir+D:/lectures/sem5/ee309/130020118_130020090_130040019_13D070018_pipeline/code {D:/lectures/sem5/ee309/130020118_130020090_130040019_13D070018_pipeline/code/forwarding_unit.v}
+# Model Technology ModelSim ALTERA vlog 10.0c Compiler 2011.09 Sep 21 2011
+# -- Compiling module forwarding_unit
+# 
+# Top level modules:
+# 	forwarding_unit
+# vlog -vlog01compat -work work +incdir+D:/lectures/sem5/ee309/130020118_130020090_130040019_13D070018_pipeline/code {D:/lectures/sem5/ee309/130020118_130020090_130040019_13D070018_pipeline/code/hazard_unit.v}
+# Model Technology ModelSim ALTERA vlog 10.0c Compiler 2011.09 Sep 21 2011
+# -- Compiling module hazard_unit
+# 
+# Top level modules:
+# 	hazard_unit
+# vlog -vlog01compat -work work +incdir+D:/lectures/sem5/ee309/130020118_130020090_130040019_13D070018_pipeline/code {D:/lectures/sem5/ee309/130020118_130020090_130040019_13D070018_pipeline/code/mux2to1_9b.v}
+# Model Technology ModelSim ALTERA vlog 10.0c Compiler 2011.09 Sep 21 2011
+# -- Compiling module mux2to1_9b
+# 
+# Top level modules:
+# 	mux2to1_9b
+# 
+#  
+vsim work.controller
+# vsim work.controller 
+# Loading work.controller
+# Loading work.se79_16
+# Loading work.mux2to1_16b
+# Loading work.mux8to1_16b
+# Loading work.Inst_Memory
+# Loading work.mux2to1_3b
+# Loading work.RegisterFile
+# Loading work.se97_16
+# Loading work.mux4to1_16b
+# Loading work.ALU1
+# Loading work.Data_memory
+# Loading work.priority_encoder
+# Loading work.mux2to1_9b
+# Loading work.forwarding_unit
+# Loading work.hazard_unit
+add wave -position end  sim:/controller/ALU_MuxA_DR
+add wave -position end  sim:/controller/ALU_MuxA_RE
+add wave -position end  sim:/controller/ALU_MuxB_DR
+add wave -position end  sim:/controller/ALU_MuxB_RE
+add wave -position end  sim:/controller/ALU_PC_A
+add wave -position end  sim:/controller/ALU_PC_B
+add wave -position end  sim:/controller/ALU_PC_out
+add wave -position end  sim:/controller/ALU_op_DR
+add wave -position end  sim:/controller/ALU_op_RE
+add wave -position end  sim:/controller/CR
+add wave -position end  sim:/controller/DR_en
+add wave -position end  sim:/controller/D_R
+add wave -position end  sim:/controller/EM_en
+add wave -position end  sim:/controller/E_M
+add wave -position end  sim:/controller/FD_en
+add wave -position end  sim:/controller/F_D
+add wave -position end  sim:/controller/F_D_in
+add wave -position end  sim:/controller/IR_FD
+add wave -position end  sim:/controller/IR_FD_se6_16
+add wave -position end  sim:/controller/IR_RE_se6_16
+add wave -position end  sim:/controller/Imm9_DR
+add wave -position end  sim:/controller/Imm9_EM
+add wave -position end  sim:/controller/Imm9_RE
+add wave -position end  sim:/controller/LM_DR
+add wave -position end  sim:/controller/LM_EM
+add wave -position end  sim:/controller/LM_MW
+add wave -position end  sim:/controller/LM_RE
+add wave -position end  sim:/controller/MW_en
+add wave -position end  sim:/controller/M_W
+add wave -position end  sim:/controller/PC
+add wave -position end  sim:/controller/PC_DR
+add wave -position end  sim:/controller/PC_FD
+add wave -position end  sim:/controller/PC_RE
+add wave -position end  sim:/controller/PC_en
+add wave -position end  sim:/controller/PC_mux_ctrl
+add wave -position end  sim:/controller/PC_new
+add wave -position end  sim:/controller/PC_next
+add wave -position end  sim:/controller/R0
+add wave -position end  sim:/controller/R1
+add wave -position end  sim:/controller/R2
+add wave -position end  sim:/controller/R3
+add wave -position end  sim:/controller/R4
+add wave -position end  sim:/controller/R5
+add wave -position end  sim:/controller/R6
+add wave -position end  sim:/controller/R7
+add wave -position end  sim:/controller/R7_dest_DR
+add wave -position end  sim:/controller/R7_dest_EM
+add wave -position end  sim:/controller/R7_dest_MW
+add wave -position end  sim:/controller/R7_dest_RE
+add wave -position end  sim:/controller/RE_en
+add wave -position end  sim:/controller/R_E
+add wave -position end  sim:/controller/Rd_DR
+add wave -position end  sim:/controller/Rd_EM
+add wave -position end  sim:/controller/Rd_MW
+add wave -position end  sim:/controller/Rd_RE
+add wave -position end  sim:/controller/Rs1_DR
+add wave -position end  sim:/controller/Rs1_RE
+add wave -position end  sim:/controller/Rs2_DR
+add wave -position end  sim:/controller/Rs2_DR_wire
+add wave -position end  sim:/controller/Rs2_FD_wire
+add wave -position end  sim:/controller/Rs2_RE
+add wave -position end  sim:/controller/SM_DR
+add wave -position end  sim:/controller/SM_EM
+add wave -position end  sim:/controller/SM_RE
+add wave -position end  sim:/controller/T1
+add wave -position end  sim:/controller/T2
+add wave -position end  sim:/controller/T2_dash
+add wave -position end  sim:/controller/T2_dash_ctrl
+add wave -position end  sim:/controller/T2_dash_in
+add wave -position end  sim:/controller/T3
+add wave -position end  sim:/controller/T3_ctrl
+add wave -position end  sim:/controller/T3_in
+add wave -position end  sim:/controller/T3_inc_out
+add wave -position end  sim:/controller/T4
+add wave -position end  sim:/controller/WB_en_EM
+add wave -position end  sim:/controller/WB_en_MW
+add wave -position end  sim:/controller/a1
+add wave -position end  sim:/controller/a1_ctrl
+add wave -position end  sim:/controller/a2
+add wave -position end  sim:/controller/a2_ctrl
+add wave -position end  sim:/controller/a3_MW_wire
+add wave -position end  sim:/controller/a3_ctrl_DR
+add wave -position end  sim:/controller/a3_ctrl_EM
+add wave -position end  sim:/controller/a3_ctrl_MW
+add wave -position end  sim:/controller/a3_ctrl_RE
+add wave -position end  sim:/controller/aluA
+add wave -position end  sim:/controller/aluB
+add wave -position end  sim:/controller/aluForwardA
+add wave -position end  sim:/controller/aluForwardB
+add wave -position end  sim:/controller/aluOut
+add wave -position end  sim:/controller/alu_pc_A_ctrl
+add wave -position end  sim:/controller/alu_pc_B_ctrl
+add wave -position end  sim:/controller/carry_flag
+add wave -position end  sim:/controller/clock
+add wave -position end  sim:/controller/edbout
+add wave -position end  sim:/controller/flush_DR
+add wave -position end  sim:/controller/flush_DR_wire
+add wave -position end  sim:/controller/flush_EM
+add wave -position end  sim:/controller/flush_EM_wire
+add wave -position end  sim:/controller/flush_FD
+add wave -position end  sim:/controller/flush_FD_wire
+add wave -position end  sim:/controller/flush_MW
+add wave -position end  sim:/controller/flush_MW_wire
+add wave -position end  sim:/controller/flush_RE
+add wave -position end  sim:/controller/flush_RE_wire
+add wave -position end  sim:/controller/forwardCtrlA
+add wave -position end  sim:/controller/forwardCtrlB
+add wave -position end  sim:/controller/imm9EMctrl
+add wave -position end  sim:/controller/imm9EMout
+add wave -position end  sim:/controller/imm9FDctrl
+add wave -position end  sim:/controller/imm9FDout
+add wave -position end  sim:/controller/jump_DR
+add wave -position end  sim:/controller/jump_EM
+add wave -position end  sim:/controller/jump_RE
+add wave -position end  sim:/controller/load_DR
+add wave -position end  sim:/controller/load_EM
+add wave -position end  sim:/controller/load_MW
+add wave -position end  sim:/controller/load_RE
+add wave -position end  sim:/controller/mdr
+add wave -position end  sim:/controller/mem_en
+add wave -position end  sim:/controller/prio_enc_LM_en
+add wave -position end  sim:/controller/prio_enc_LM_op
+add wave -position end  sim:/controller/prio_enc_LM_out_addr
+add wave -position end  sim:/controller/prio_enc_SM_en
+add wave -position end  sim:/controller/prio_enc_SM_op
+add wave -position end  sim:/controller/prio_enc_SM_out_addr
+add wave -position end  sim:/controller/reg_efct_DR
+add wave -position end  sim:/controller/reg_efct_EM
+add wave -position end  sim:/controller/reg_efct_MW
+add wave -position end  sim:/controller/reg_efct_RE
+add wave -position end  sim:/controller/reset
+add wave -position end  sim:/controller/rf1
+add wave -position end  sim:/controller/rf2
+add wave -position end  sim:/controller/rf3
+add wave -position end  sim:/controller/rf3_wr_en
+add wave -position end  sim:/controller/rf4
+add wave -position end  sim:/controller/rf4_wr_en
+add wave -position end  sim:/controller/se79_16out
+add wave -position end  sim:/controller/se97_16out
+add wave -position end  sim:/controller/store_DR
+add wave -position end  sim:/controller/store_EM
+add wave -position end  sim:/controller/store_MW
+add wave -position end  sim:/controller/store_RE
+add wave -position end  sim:/controller/vbit_LM
+add wave -position end  sim:/controller/vbit_SM
+add wave -position end  sim:/controller/zero_flag
+run
+force -freeze sim:/controller/clock 1 0, 0 {50 ps} -r 100

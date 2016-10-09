@@ -1,0 +1,596 @@
+Quartus II 32-bit
+Version 11.1 Build 173 11/01/2011 SJ Web Edition
+15
+1424
+OFF
+OFF
+OFF
+ON
+ON
+ON
+FV_OFF
+Level2
+0
+0
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+controller
+# storage
+db|pipeline_project.(0).cnf
+db|pipeline_project.(0).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+controller.v
+796d94bae59c48b5d87d3a1efcb4202c
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# entity
+se79_16
+# storage
+db|pipeline_project.(1).cnf
+db|pipeline_project.(1).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+se79_16.v
+8d98b8aafcb7a9c911628bd64e3d6d3
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+se79_16:signExtender79_16_PC_FD
+se79_16:signExtender79_16_PC_RE
+se79_16:signExtender79_16
+}
+# macro_sequence
+
+# end
+# entity
+mux2to1_16b
+# storage
+db|pipeline_project.(2).cnf
+db|pipeline_project.(2).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+mux2to1.v
+a4be647487d4ac87b3c221993b3f9ff
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+mux2to1_16b:ALU_PC_MUXA
+mux2to1_16b:ALU_PC_MUXB
+mux2to1_16b:aluSrcAMux
+mux2to1_16b:T3_mux
+mux2to1_16b:T2_dash_mux
+mux2to1_16b:WB_mux
+}
+# macro_sequence
+
+# end
+# entity
+mux8to1_16b
+# storage
+db|pipeline_project.(3).cnf
+db|pipeline_project.(3).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+mux8to1_16b.v
+646b391f991c69217a3fbead34e99288
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+mux8to1_16b:PC_mux
+mux8to1_16b:aluSrcBMux
+}
+# macro_sequence
+
+# end
+# entity
+mux2to1_3b
+# storage
+db|pipeline_project.(5).cnf
+db|pipeline_project.(5).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+mux2to1_3b.v
+17bfb6ad662bd79ec40d0824633be5
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+mux2to1_3b:a1_mux
+mux2to1_3b:a2_DR_mux
+mux2to1_3b:a3_mux_MW
+}
+# macro_sequence
+
+# end
+# entity
+se97_16
+# storage
+db|pipeline_project.(7).cnf
+db|pipeline_project.(7).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+se97_16.v
+f181183bb2c9a5bddb5f0e2c870887b
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+se97_16:signExtender97_16
+}
+# macro_sequence
+
+# end
+# entity
+mux4to1_16b
+# storage
+db|pipeline_project.(8).cnf
+db|pipeline_project.(8).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+mux4to1_16b.v
+7fbb908041829a8737f6292757232b1
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+mux4to1_16b:forwardMuxA
+mux4to1_16b:forwardMuxB
+}
+# macro_sequence
+
+# end
+# entity
+ALU1
+# storage
+db|pipeline_project.(9).cnf
+db|pipeline_project.(9).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+alu1.v
+c9b673d32d98b3a9902eb11ce1e8b723
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# user_parameter {
+nop
+00
+PARAMETER_UNSIGNED_BIN
+DEF
+add
+01
+PARAMETER_UNSIGNED_BIN
+DEF
+comp
+10
+PARAMETER_UNSIGNED_BIN
+DEF
+nan
+11
+PARAMETER_UNSIGNED_BIN
+DEF
+}
+# hierarchies {
+ALU1:alu1
+}
+# macro_sequence
+
+# end
+# entity
+priority_encoder
+# storage
+db|pipeline_project.(11).cnf
+db|pipeline_project.(11).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+priority_encoder.v
+de42a6f76b678a12b67b3aff97aa6d91
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+priority_encoder:prio_enc_LM
+priority_encoder:prio_enc_SM
+}
+# macro_sequence
+
+# end
+# entity
+mux2to1_9b
+# storage
+db|pipeline_project.(12).cnf
+db|pipeline_project.(12).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+mux2to1_9b.v
+8f8c7216c4726a72162c591b1b8413
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+mux2to1_9b:imm9FDmux
+mux2to1_9b:imm9EMmux
+}
+# macro_sequence
+
+# end
+# entity
+RegisterFile
+# storage
+db|pipeline_project.(6).cnf
+db|pipeline_project.(6).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+regfiles.v
+146634f1671a62833d6d9a4465a31b
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+RegisterFile:regFile
+}
+# macro_sequence
+
+# end
+# entity
+Data_memory
+# storage
+db|pipeline_project.(10).cnf
+db|pipeline_project.(10).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+data_memory.v
+fa39d57f27c0ec86fcfa174ccda4d3
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+Data_memory:Data_memory0
+}
+# macro_sequence
+
+# end
+# entity
+hazard_unit
+# storage
+db|pipeline_project.(14).cnf
+db|pipeline_project.(14).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+hazard_unit.v
+76ec2230fd362d6a61e92e4041551644
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+hazard_unit:hazard_unit_0
+}
+# macro_sequence
+
+# end
+# entity
+forwarding_unit
+# storage
+db|pipeline_project.(13).cnf
+db|pipeline_project.(13).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+forwarding_unit.v
+c11c36f491bcfcc6a544c24f22dde38
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+forwarding_unit:forwarding_unit_0
+}
+# macro_sequence
+
+# end
+# entity
+Inst_Memory
+# storage
+db|pipeline_project.(4).cnf
+db|pipeline_project.(4).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+inst_memory.v
+d13072ce1fd21c1a2f6257b4eafa19c9
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+Inst_Memory:inst_memory0
+}
+# macro_sequence
+
+# end
+# complete
+

@@ -1,0 +1,13 @@
+module mux2to1_9b (ip0,ip1, ctrl_sig, op);
+input wire [8:0] ip1,ip0;
+input wire  ctrl_sig ;
+output reg [8:0] op;
+ 
+always @(*)
+begin
+case(ctrl_sig)
+ 1:begin op=ip1; end
+ 0:begin op=ip0; end
+endcase
+end
+endmodule

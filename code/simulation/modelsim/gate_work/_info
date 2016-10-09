@@ -1,0 +1,24 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\lectures\sem5\ee309\PipelineProject\Pipeline\simulation\modelsim
+vcontroller
+!s100 QAFAT1d`F;KYzOWP264GN0
+I:bzAIEzEUzjazAGB9^UAE1
+VFd_K[<D1O_1;3UVdMX7W]0
+Z1 dD:\lectures\sem5\ee309\PipelineProject\Pipeline\simulation\modelsim
+w1446757068
+8pipeline_project_6_1200mv_85c_slow.vo
+Fpipeline_project_6_1200mv_85c_slow.vo
+L0 31
+OV;L;10.0c;49
+r1
+!s85 0
+31
+!s108 1446757198.809000
+!s107 pipeline_project_6_1200mv_85c_slow.vo|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+.|pipeline_project_6_1200mv_85c_slow.vo|
+!s101 -O0
+o-vlog01compat -work work -O0
+!s92 -vlog01compat -work work +incdir+. -O0

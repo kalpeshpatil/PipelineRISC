@@ -1,0 +1,294 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\lectures\sem5\ee309\130020118_130020090_130040019_13D070018_pipeline\code\simulation\modelsim
+vALU1
+IOAgcUCWe65jP6dUU:PZz30
+VaA4hH:hdNS<GbC1hjO9UE1
+Z1 dD:\lectures\sem5\ee309\130020118_130020090_130040019_13D070018_pipeline\code\simulation\modelsim
+w1446747427
+8D:/lectures/sem5/ee309/130020118_130020090_130040019_13D070018_pipeline/code/ALU1.v
+FD:/lectures/sem5/ee309/130020118_130020090_130040019_13D070018_pipeline/code/ALU1.v
+L0 1
+Z2 OV;L;10.0c;49
+r1
+31
+Z3 o-vlog01compat -work work -O0
+Z4 !s92 -vlog01compat -work work +incdir+D:/lectures/sem5/ee309/130020118_130020090_130040019_13D070018_pipeline/code -O0
+n@a@l@u1
+!s100 mk8XTP[lA`g8E;:mUnVQ20
+!s85 0
+!s108 1448897858.598000
+!s107 D:/lectures/sem5/ee309/130020118_130020090_130040019_13D070018_pipeline/code/ALU1.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/lectures/sem5/ee309/130020118_130020090_130040019_13D070018_pipeline/code|D:/lectures/sem5/ee309/130020118_130020090_130040019_13D070018_pipeline/code/ALU1.v|
+!s101 -O0
+vcontroller
+IL^dkECTQ6DW36_kzd]I4T2
+VcC3U^k^S8i<DY>mM`jKgh0
+R1
+w1448812735
+8D:/lectures/sem5/ee309/130020118_130020090_130040019_13D070018_pipeline/code/controller.v
+FD:/lectures/sem5/ee309/130020118_130020090_130040019_13D070018_pipeline/code/controller.v
+L0 1
+R2
+r1
+31
+R3
+R4
+!s100 m17m2;ldkLRUBkPkAif6O3
+!s85 0
+!s108 1448897857.223000
+!s107 D:/lectures/sem5/ee309/130020118_130020090_130040019_13D070018_pipeline/code/controller.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/lectures/sem5/ee309/130020118_130020090_130040019_13D070018_pipeline/code|D:/lectures/sem5/ee309/130020118_130020090_130040019_13D070018_pipeline/code/controller.v|
+!s101 -O0
+vData_memory
+I;?_iVbP<a4Wi9L`F17M`?3
+VEO8bl;o=4@HCKkWPA3:nh0
+R1
+Z5 w1448825313
+8D:/lectures/sem5/ee309/130020118_130020090_130040019_13D070018_pipeline/code/Data_memory.v
+FD:/lectures/sem5/ee309/130020118_130020090_130040019_13D070018_pipeline/code/Data_memory.v
+L0 1
+R2
+r1
+31
+R3
+R4
+n@data_memory
+!s100 >OZ]]74ez^Wo]h;>NEVhh3
+!s85 0
+!s108 1448897856.098000
+!s107 D:/lectures/sem5/ee309/130020118_130020090_130040019_13D070018_pipeline/code/Data_memory.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/lectures/sem5/ee309/130020118_130020090_130040019_13D070018_pipeline/code|D:/lectures/sem5/ee309/130020118_130020090_130040019_13D070018_pipeline/code/Data_memory.v|
+!s101 -O0
+vforwarding_unit
+I5_S08]>1JZG=6^h8`5m850
+Vf::ZYz]D_[8]6ahi[2efo2
+R1
+w1448833992
+8D:/lectures/sem5/ee309/130020118_130020090_130040019_13D070018_pipeline/code/forwarding_unit.v
+FD:/lectures/sem5/ee309/130020118_130020090_130040019_13D070018_pipeline/code/forwarding_unit.v
+L0 1
+R2
+r1
+31
+R3
+R4
+!s100 BfocA5:Ya>SkI_2IGY?c60
+!s85 0
+!s108 1448897859.270000
+!s107 D:/lectures/sem5/ee309/130020118_130020090_130040019_13D070018_pipeline/code/forwarding_unit.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/lectures/sem5/ee309/130020118_130020090_130040019_13D070018_pipeline/code|D:/lectures/sem5/ee309/130020118_130020090_130040019_13D070018_pipeline/code/forwarding_unit.v|
+!s101 -O0
+vhazard_unit
+INj6UD[zRjgLjf1fb:o2E]2
+VD:;J?3]gB1logQb_d68B41
+R1
+w1448827051
+8D:/lectures/sem5/ee309/130020118_130020090_130040019_13D070018_pipeline/code/hazard_unit.v
+FD:/lectures/sem5/ee309/130020118_130020090_130040019_13D070018_pipeline/code/hazard_unit.v
+L0 1
+R2
+r1
+31
+R3
+R4
+!s100 aXJgNW=6Lke2oYYDQ>kYZ2
+!s85 0
+!s108 1448897859.911000
+!s107 D:/lectures/sem5/ee309/130020118_130020090_130040019_13D070018_pipeline/code/hazard_unit.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/lectures/sem5/ee309/130020118_130020090_130040019_13D070018_pipeline/code|D:/lectures/sem5/ee309/130020118_130020090_130040019_13D070018_pipeline/code/hazard_unit.v|
+!s101 -O0
+vInst_Memory
+IXdeJ;cioU]A``gYXz;KLk1
+VhLJMS]RE2TkeKoD_9;gfG2
+R1
+w1448868150
+8D:/lectures/sem5/ee309/130020118_130020090_130040019_13D070018_pipeline/code/Inst_memory.v
+FD:/lectures/sem5/ee309/130020118_130020090_130040019_13D070018_pipeline/code/Inst_memory.v
+L0 1
+R2
+r1
+31
+R3
+R4
+n@inst_@memory
+!s100 ?3U=o`M=T[:`E[YY0m:Z;0
+!s85 0
+!s108 1448897855.489000
+!s107 D:/lectures/sem5/ee309/130020118_130020090_130040019_13D070018_pipeline/code/Inst_memory.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/lectures/sem5/ee309/130020118_130020090_130040019_13D070018_pipeline/code|D:/lectures/sem5/ee309/130020118_130020090_130040019_13D070018_pipeline/code/Inst_memory.v|
+!s101 -O0
+vmux2to1_16b
+IN05SAiHDZXIXKeVI9LPTQ2
+VMI<O`L`46o@m:TAGUlN2H0
+R1
+Z6 w1446730762
+8D:/lectures/sem5/ee309/130020118_130020090_130040019_13D070018_pipeline/code/mux2to1.v
+FD:/lectures/sem5/ee309/130020118_130020090_130040019_13D070018_pipeline/code/mux2to1.v
+L0 1
+R2
+r1
+31
+R3
+R4
+!s100 MNk9hgHOICzb58z=5Q2ZN0
+!s85 0
+!s108 1448897854.928000
+!s107 D:/lectures/sem5/ee309/130020118_130020090_130040019_13D070018_pipeline/code/mux2to1.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/lectures/sem5/ee309/130020118_130020090_130040019_13D070018_pipeline/code|D:/lectures/sem5/ee309/130020118_130020090_130040019_13D070018_pipeline/code/mux2to1.v|
+!s101 -O0
+vmux2to1_3b
+IZbh_QKF7I2=c;JeSL>fS73
+VZ5IPLX0W@_?Mzd`KNQ7Bz3
+R1
+w1446735482
+8D:/lectures/sem5/ee309/130020118_130020090_130040019_13D070018_pipeline/code/mux2to1_3b.v
+FD:/lectures/sem5/ee309/130020118_130020090_130040019_13D070018_pipeline/code/mux2to1_3b.v
+L0 1
+R2
+r1
+31
+R3
+R4
+!s100 oS=SM[aFkeHIzUWf?NNC43
+!s85 0
+!s108 1448897858.051000
+!s107 D:/lectures/sem5/ee309/130020118_130020090_130040019_13D070018_pipeline/code/mux2to1_3b.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/lectures/sem5/ee309/130020118_130020090_130040019_13D070018_pipeline/code|D:/lectures/sem5/ee309/130020118_130020090_130040019_13D070018_pipeline/code/mux2to1_3b.v|
+!s101 -O0
+vmux2to1_9b
+!s100 _AH=Y[R2IUHlTko17AI;F1
+IEh2ne:<N=KMC_S6ZGlW9_2
+VGTnAjaVa363a2>MHOg@Mi2
+R1
+w1446831442
+8D:/lectures/sem5/ee309/130020118_130020090_130040019_13D070018_pipeline/code/mux2to1_9b.v
+FD:/lectures/sem5/ee309/130020118_130020090_130040019_13D070018_pipeline/code/mux2to1_9b.v
+L0 1
+R2
+r1
+!s85 0
+31
+!s108 1448897860.551000
+!s107 D:/lectures/sem5/ee309/130020118_130020090_130040019_13D070018_pipeline/code/mux2to1_9b.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/lectures/sem5/ee309/130020118_130020090_130040019_13D070018_pipeline/code|D:/lectures/sem5/ee309/130020118_130020090_130040019_13D070018_pipeline/code/mux2to1_9b.v|
+!s101 -O0
+R3
+R4
+vmux4to1_16b
+IL2fP4lFf0SN3lAY5AdV;a2
+V5o@gXjizgN71>_5KLmbFO1
+R1
+Z7 w1446730763
+8D:/lectures/sem5/ee309/130020118_130020090_130040019_13D070018_pipeline/code/mux4to1_16b.v
+FD:/lectures/sem5/ee309/130020118_130020090_130040019_13D070018_pipeline/code/mux4to1_16b.v
+L0 1
+R2
+r1
+31
+R3
+R4
+!s100 C4lGPc]7h5iaZB9DLb<^^0
+!s85 0
+!s108 1448897853.302000
+!s107 D:/lectures/sem5/ee309/130020118_130020090_130040019_13D070018_pipeline/code/mux4to1_16b.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/lectures/sem5/ee309/130020118_130020090_130040019_13D070018_pipeline/code|D:/lectures/sem5/ee309/130020118_130020090_130040019_13D070018_pipeline/code/mux4to1_16b.v|
+!s101 -O0
+vmux8to1_16b
+Iho2MI2:@7omdoGf3X5d=53
+VcVcI5Bzea9>__OZ209FZ22
+R1
+R7
+8D:/lectures/sem5/ee309/130020118_130020090_130040019_13D070018_pipeline/code/mux8to1_16b.v
+FD:/lectures/sem5/ee309/130020118_130020090_130040019_13D070018_pipeline/code/mux8to1_16b.v
+L0 1
+R2
+r1
+31
+R3
+R4
+!s100 iPI5YEf[3ln3U3PLM0C:f1
+!s85 0
+!s108 1448897852.802000
+!s107 D:/lectures/sem5/ee309/130020118_130020090_130040019_13D070018_pipeline/code/mux8to1_16b.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/lectures/sem5/ee309/130020118_130020090_130040019_13D070018_pipeline/code|D:/lectures/sem5/ee309/130020118_130020090_130040019_13D070018_pipeline/code/mux8to1_16b.v|
+!s101 -O0
+vpriority_encoder
+IB;b<`JHVzedKGK<B=8iUa3
+V4n^l_^6zXEMY19MN7Kg>[0
+R1
+w1448814181
+8D:/lectures/sem5/ee309/130020118_130020090_130040019_13D070018_pipeline/code/priority_encoder.v
+FD:/lectures/sem5/ee309/130020118_130020090_130040019_13D070018_pipeline/code/priority_encoder.v
+L0 1
+R2
+r1
+31
+R3
+R4
+!s100 1XFGVJGgI^5Z6PbNg_R=V2
+!s85 0
+!s108 1448897856.707000
+!s107 D:/lectures/sem5/ee309/130020118_130020090_130040019_13D070018_pipeline/code/priority_encoder.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/lectures/sem5/ee309/130020118_130020090_130040019_13D070018_pipeline/code|D:/lectures/sem5/ee309/130020118_130020090_130040019_13D070018_pipeline/code/priority_encoder.v|
+!s101 -O0
+vRegisterFile
+IPZY]fhNfoW_h40SLUf5IO0
+VgzKi@f`1VDa?Cin78Sza42
+R1
+R5
+8D:/lectures/sem5/ee309/130020118_130020090_130040019_13D070018_pipeline/code/RegFiles.v
+FD:/lectures/sem5/ee309/130020118_130020090_130040019_13D070018_pipeline/code/RegFiles.v
+L0 1
+R2
+r1
+31
+R3
+n@register@file
+R4
+!s100 Dh=f1J8oY=BNi?kdD@>Vg1
+!s85 0
+!s108 1448897852.255000
+!s107 D:/lectures/sem5/ee309/130020118_130020090_130040019_13D070018_pipeline/code/RegFiles.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/lectures/sem5/ee309/130020118_130020090_130040019_13D070018_pipeline/code|D:/lectures/sem5/ee309/130020118_130020090_130040019_13D070018_pipeline/code/RegFiles.v|
+!s101 -O0
+vse79_16
+IoSOR9RE[T8fYO9m`Wcf]h0
+Vm0c]biOX[7Nn`0mf5Pe>[1
+R1
+R6
+8D:/lectures/sem5/ee309/130020118_130020090_130040019_13D070018_pipeline/code/se79_16.v
+FD:/lectures/sem5/ee309/130020118_130020090_130040019_13D070018_pipeline/code/se79_16.v
+L0 1
+R2
+r1
+31
+R3
+R4
+!s100 z[[Wl]LEPE=902S;O>7bm2
+!s85 0
+!s108 1448897854.461000
+!s107 D:/lectures/sem5/ee309/130020118_130020090_130040019_13D070018_pipeline/code/se79_16.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/lectures/sem5/ee309/130020118_130020090_130040019_13D070018_pipeline/code|D:/lectures/sem5/ee309/130020118_130020090_130040019_13D070018_pipeline/code/se79_16.v|
+!s101 -O0
+vse97_16
+I:4Og9[O<1nOG2mYRW2fF=3
+V^INNJUZLDLGml]8G?c`600
+R1
+R7
+8D:/lectures/sem5/ee309/130020118_130020090_130040019_13D070018_pipeline/code/se97_16.v
+FD:/lectures/sem5/ee309/130020118_130020090_130040019_13D070018_pipeline/code/se97_16.v
+L0 1
+R2
+r1
+31
+R3
+R4
+!s100 ezdOJTA<;fH<ST?K@]82D0
+!s85 0
+!s108 1448897853.820000
+!s107 D:/lectures/sem5/ee309/130020118_130020090_130040019_13D070018_pipeline/code/se97_16.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/lectures/sem5/ee309/130020118_130020090_130040019_13D070018_pipeline/code|D:/lectures/sem5/ee309/130020118_130020090_130040019_13D070018_pipeline/code/se97_16.v|
+!s101 -O0
